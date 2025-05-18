@@ -1,0 +1,81 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+#container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+}
+
+.card{
+    display: flex;
+    border: 2px solid black;
+    margin: 10px 10px;
+    padding: 20px;
+    width: 30%;
+    font-size: 18px;
+    font-weight: 2px;
+    animation: colorChange ease-in-out 2s infinite alternate;
+    text-shadow:0 0 10px rgba(255, 255, 255, 0);
+    color: white;
+    /* height: 18rem; */
+    box-sizing: border-box;
+    border-radius: 15px;
+    flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    /* background-color:white; */
+    background-color: rgba(255, 255, 255, 0.4);
+    backdrop-filter:blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    
+
+}
+
+.bawah{
+    display: flex;
+    justify-content: space-between;
+    background: transparent;
+}
+
+.card h3{
+    margin: 0;
+}
+
+.card img{
+    max-width: 20rem;
+    margin: 20px auto;
+    border-radius: 5px;
+    animation-name: spin;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    background-position: center;
+
+}
+
+@keyframes spin{ 
+    from{
+        transform: rotate(0deg);
+        
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes colorChange {
+    0%{
+        color:white;
+    }
+    100%{
+        color: black;
+    }
+
+}
+
